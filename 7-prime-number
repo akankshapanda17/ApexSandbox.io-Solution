@@ -3,9 +3,9 @@ public Boolean isPrime(Integer num) {
     Integer x;
     for(Integer i=2; i<num; i++){
         if(Math.mod(num,i)==0){
-            x++;
+            return false;
         }
     }
-    if(x>0) return false;
-    else return true;
+     
+     return true;
 }
