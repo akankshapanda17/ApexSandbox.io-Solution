@@ -1,15 +1,14 @@
 public String formatName(String firstName, String lastName) {
     //code here
-    if(String.isEmpty(firstName)){
+    if(String.IsBlank(firstName)){
+        if(String.IsBlank(lastName)){
+            return '';
+        }
         return lastName;
-    }
-    else if(String.isEmpty(lastName)){
+    } 
+    else if(String.IsBlank(lastName)){
         return firstName;
     }
-
-    else if(String.IsBlank(firstName) && String.IsBlank(lastName)){
-        return '';
-    } 
     else {
         return lastName + ', ' + firstName;
     }
