@@ -1,0 +1,17 @@
+public Integer nextPrime(Integer num) {
+    //code here
+    if(num<2) return 2;
+    while(!isPrime(++num));
+    return num;
+}
+public Boolean isPrime(Integer num) {
+    //code here
+    Integer x;
+    for(Integer i=2; i<num; i++){
+        if(Math.mod(num,i)==0){
+            return false;
+        }
+    }
+     
+     return true;
+}
