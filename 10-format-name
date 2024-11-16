@@ -8,7 +8,7 @@ public String formatName(String firstName, String lastName) {
     }
 
     else if(String.isEmpty(firstName) && String.isEmpty(lastName)){
-        return null;
+        return ;
     } 
     else {
         return lastName + ', ' + firstName;
