@@ -1,0 +1,26 @@
+public String reverseWordsInASentence(String sentence){
+   try{
+
+        String nameRev = (sentence.reverse());
+
+        List<String> StringName = nameRev.split(' ');
+
+        String returnString = '';
+
+        for(String str : StringName){
+
+            returnString = returnString + str.reverse() +' ' ;
+
+        }
+
+        return returnString.trim();
+
+    }
+
+    catch(NullPointerException exp){
+
+        return null;
+
+    }
+
+}
